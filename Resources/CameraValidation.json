@@ -1,0 +1,146 @@
+[
+  {
+    "camera": "Canon EOS 5D Mark IV",
+    "format": "CR2",
+    "mode": "RAW · 非双像素 RAW",
+    "engine": "Apple RAW",
+    "dimensions": "6720 × 4480",
+    "source": "https://raw.pixls.us/getfile.php/983/nice/Canon%20-%20EOS%205D%20Mark%20IV%20-%20RAW%20%283:2%29.CR2"
+  },
+  {
+    "camera": "Canon EOS R6",
+    "format": "CR3",
+    "mode": "C-RAW · 1.6× 裁切",
+    "engine": "Apple RAW",
+    "dimensions": "3408 × 2272",
+    "source": "https://raw.pixls.us/getfile.php/4659/nice/Canon%20-%20EOS%20R6%20-%203:2.CR3"
+  },
+  {
+    "camera": "Canon EOS R6",
+    "format": "CR3",
+    "mode": "RAW",
+    "engine": "Apple RAW",
+    "dimensions": "5472 × 3648",
+    "source": "https://raw.pixls.us/getfile.php/4662/nice/Canon%20-%20EOS%20R6%20-%203:2.CR3"
+  },
+  {
+    "camera": "NIKON CORPORATION NIKON D750",
+    "format": "NEF",
+    "mode": "12 位有损压缩",
+    "engine": "Apple RAW",
+    "dimensions": "6016 × 4016",
+    "source": "https://raw.pixls.us/getfile.php/895/nice/Nikon%20-%20D750%20-%2012bit%2012bit%20compressed%20%28Lossy%20%28type%202%29%29%20%283:2%29.NEF"
+  },
+  {
+    "camera": "NIKON CORPORATION NIKON D750",
+    "format": "NEF",
+    "mode": "14 位无损压缩",
+    "engine": "Apple RAW",
+    "dimensions": "6016 × 4016",
+    "source": "https://raw.pixls.us/getfile.php/898/nice/Nikon%20-%20D750%20-%2014bit%2014bit%20compressed%20%28Lossless%29%20%283:2%29.NEF"
+  },
+  {
+    "camera": "NIKON CORPORATION NIKON Z 8",
+    "format": "NEF",
+    "mode": "高效率压缩（样片标注 low）",
+    "engine": "Apple RAW",
+    "dimensions": "8256 × 5504",
+    "source": "https://raw.pixls.us/getfile.php/6616/nice/Nikon%20-%20Z%208%20-%208bit%208bit%20compressed%20%283:2%29.NEF"
+  },
+  {
+    "camera": "NIKON CORPORATION NIKON Z 8",
+    "format": "NEF",
+    "mode": "14 位无损压缩",
+    "engine": "Apple RAW",
+    "dimensions": "8256 × 5504",
+    "source": "https://raw.pixls.us/getfile.php/6617/nice/Nikon%20-%20Z%208%20-%208bit%208bit%20compressed%20%283:2%29.NEF"
+  },
+  {
+    "camera": "NIKON CORPORATION NIKON Z 8",
+    "format": "NEF",
+    "mode": "高效率压缩（样片标注 high）",
+    "engine": "Apple RAW",
+    "dimensions": "8256 × 5504",
+    "source": "https://raw.pixls.us/getfile.php/6618/nice/Nikon%20-%20Z%208%20-%208bit%208bit%20compressed%20%283:2%29.NEF"
+  },
+  {
+    "camera": "SONY ILCE-7M3",
+    "format": "ARW",
+    "mode": "14 位压缩",
+    "engine": "Apple RAW",
+    "dimensions": "6000 × 4000",
+    "source": "https://raw.pixls.us/getfile.php/2414/nice/Sony%20-%20ILCE-7M3%20-%2014bit%2014bit%20compressed%20%283:2%29.ARW"
+  },
+  {
+    "camera": "SONY ILCE-7M3",
+    "format": "ARW",
+    "mode": "14 位未压缩",
+    "engine": "Apple RAW",
+    "dimensions": "6000 × 4000",
+    "source": "https://raw.pixls.us/getfile.php/2418/nice/Sony%20-%20ILCE-7M3%20-%2014bit%2014bit%20uncompressed%20%283:2%29.ARW"
+  },
+  {
+    "camera": "FUJIFILM X-T3",
+    "format": "RAF",
+    "mode": "14 位压缩 · X-Trans",
+    "engine": "Apple RAW",
+    "dimensions": "6240 × 4160",
+    "source": "https://raw.pixls.us/getfile.php/2783/nice/Fujifilm%20-%20X-T3%20-%2014bit%2014bit%20compressed%20%283:2%29.RAF"
+  },
+  {
+    "camera": "FUJIFILM X-T3",
+    "format": "RAF",
+    "mode": "14 位未压缩 · X-Trans",
+    "engine": "Apple RAW",
+    "dimensions": "6240 × 4160",
+    "source": "https://raw.pixls.us/getfile.php/2784/nice/Fujifilm%20-%20X-T3%20-%2014bit%2014bit%20uncompressed%20%283:2%29.RAF"
+  },
+  {
+    "camera": "Panasonic DC-S5",
+    "format": "RW2",
+    "mode": "标准尺寸",
+    "engine": "Apple RAW",
+    "dimensions": "6000 × 4000",
+    "source": "https://raw.pixls.us/getfile.php/4096/nice/Panasonic%20-%20DC-S5%20-%203:2.RW2"
+  },
+  {
+    "camera": "Panasonic DC-S5",
+    "format": "RW2",
+    "mode": "9600 万像素高分辨率合成",
+    "engine": "Apple RAW",
+    "dimensions": "12000 × 8000",
+    "source": "https://raw.pixls.us/getfile.php/4098/nice/Panasonic%20-%20DC-S5%20-%203:2.RW2"
+  },
+  {
+    "camera": "OLYMPUS CORPORATION     E-M10MarkII     ",
+    "format": "ORF",
+    "mode": "标准 RAW",
+    "engine": "Apple RAW",
+    "dimensions": "4608 × 3456",
+    "source": "https://raw.pixls.us/getfile.php/5915/nice/Olympus%20-%20E-M10%20Mark%20II%20-%2016bit%20%284:3%29.ORF"
+  },
+  {
+    "camera": "RICOH IMAGING COMPANY, LTD.   PENTAX K-3         ",
+    "format": "PEF",
+    "mode": "14 位 PEF",
+    "engine": "Apple RAW",
+    "dimensions": "6016 × 4000",
+    "source": "https://raw.pixls.us/getfile.php/1075/nice/Pentax%20-%20K-3%20-%2014bit%20%283:2%29.PEF"
+  },
+  {
+    "camera": "Leica Camera AG LEICA M10",
+    "format": "DNG",
+    "mode": "未压缩 DNG",
+    "engine": "Apple RAW",
+    "dimensions": "5952 × 3968",
+    "source": "https://raw.pixls.us/getfile.php/1603/nice/Leica%20-%20M10%20-%2016bit%2016bit%20uncompressed%20%283:2%29.dng"
+  },
+  {
+    "camera": "Hasselblad X1D",
+    "format": "3FR",
+    "mode": "标准 3FR",
+    "engine": "Apple RAW",
+    "dimensions": "8272 × 6200",
+    "source": "https://raw.pixls.us/getfile.php/2058/nice/Hasselblad%20-%20X1D%20-%2016bit%20%284:3%29.3FR"
+  }
+]

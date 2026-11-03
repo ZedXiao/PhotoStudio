@@ -1,0 +1,164 @@
+[
+  {
+    "file": "983.cr2",
+    "camera": "Canon EOS 5D Mark IV",
+    "mode": "RAW · 非双像素 RAW",
+    "url": "https://raw.pixls.us/getfile.php/983/nice/Canon%20-%20EOS%205D%20Mark%20IV%20-%20RAW%20%283:2%29.CR2",
+    "sha256": "02b23f9cc6dc4c99fb39aa4d1f65ac227804d06461ac1bd0f842aa2f3beb8fe4",
+    "license": "CC0-1.0",
+    "sourceMode": "RAW (3:2) · RAW without DPR (Dual Pixel RAW)"
+  },
+  {
+    "file": "4659.cr3",
+    "camera": "Canon EOS R6",
+    "mode": "C-RAW · 1.6× 裁切",
+    "url": "https://raw.pixls.us/getfile.php/4659/nice/Canon%20-%20EOS%20R6%20-%203:2.CR3",
+    "sha256": "74abb0a113d075ad9887a058082f40dd2a938c4813a08474d82356f11a027778",
+    "license": "CC0-1.0",
+    "sourceMode": "3:2 · CRAW 1.6x crop"
+  },
+  {
+    "file": "4662.cr3",
+    "camera": "Canon EOS R6",
+    "mode": "RAW",
+    "url": "https://raw.pixls.us/getfile.php/4662/nice/Canon%20-%20EOS%20R6%20-%203:2.CR3",
+    "sha256": "81fab349ae9080fd0172583b7fd5ea36806e95ffa434909d2ccc6527dde34ee6",
+    "license": "CC0-1.0",
+    "sourceMode": "3:2 · RAW"
+  },
+  {
+    "file": "895.nef",
+    "camera": "Nikon D750",
+    "mode": "12 位有损压缩",
+    "url": "https://raw.pixls.us/getfile.php/895/nice/Nikon%20-%20D750%20-%2012bit%2012bit%20compressed%20%28Lossy%20%28type%202%29%29%20%283:2%29.NEF",
+    "sha256": "e4a3f85e014275fc0a47600a373af95ec850872a5f6cf87649bcaa42b77ef2e4",
+    "license": "CC0-1.0",
+    "sourceMode": "12bit 12bit compressed (Lossy (type 2)) (3:2) · 12-bit"
+  },
+  {
+    "file": "898.nef",
+    "camera": "Nikon D750",
+    "mode": "14 位无损压缩",
+    "url": "https://raw.pixls.us/getfile.php/898/nice/Nikon%20-%20D750%20-%2014bit%2014bit%20compressed%20%28Lossless%29%20%283:2%29.NEF",
+    "sha256": "f90deb2819863f5a6ca9913c255fdd83a94963f4284eb88df9d389da7a6c7665",
+    "license": "CC0-1.0",
+    "sourceMode": "14bit 14bit compressed (Lossless) (3:2) · 14-bit"
+  },
+  {
+    "file": "6616.nef",
+    "camera": "Nikon Z 8",
+    "mode": "高效率压缩（样片标注 low）",
+    "url": "https://raw.pixls.us/getfile.php/6616/nice/Nikon%20-%20Z%208%20-%208bit%208bit%20compressed%20%283:2%29.NEF",
+    "sha256": "82df041542b8d328738443bb5ff3373b396e406ecc8cbe7dc3b35252790c53e7",
+    "license": "CC0-1.0",
+    "sourceMode": "8bit 8bit compressed (3:2) · high efficiency low"
+  },
+  {
+    "file": "6617.nef",
+    "camera": "Nikon Z 8",
+    "mode": "14 位无损压缩",
+    "url": "https://raw.pixls.us/getfile.php/6617/nice/Nikon%20-%20Z%208%20-%208bit%208bit%20compressed%20%283:2%29.NEF",
+    "sha256": "c13a8675294456b9c979e6c1e556951654f35377b2870af2874bfb556f21ce40",
+    "license": "CC0-1.0",
+    "sourceMode": "8bit 8bit compressed (3:2) · 14 bit lossless compression"
+  },
+  {
+    "file": "6618.nef",
+    "camera": "Nikon Z 8",
+    "mode": "高效率压缩（样片标注 high）",
+    "url": "https://raw.pixls.us/getfile.php/6618/nice/Nikon%20-%20Z%208%20-%208bit%208bit%20compressed%20%283:2%29.NEF",
+    "sha256": "ea8b093cd11c946c5eeb501b775859e8e617ce1d79577abc41b233c339e4004c",
+    "license": "CC0-1.0",
+    "sourceMode": "8bit 8bit compressed (3:2) · high efficiency hight"
+  },
+  {
+    "file": "2414.arw",
+    "camera": "Sony ILCE-7M3",
+    "mode": "14 位压缩",
+    "url": "https://raw.pixls.us/getfile.php/2414/nice/Sony%20-%20ILCE-7M3%20-%2014bit%2014bit%20compressed%20%283:2%29.ARW",
+    "sha256": "250784580ea527442c09004417bb0eead484f2bf3ee8f9121a776ac65bb50d0f",
+    "license": "CC0-1.0",
+    "sourceMode": "14bit 14bit compressed (3:2)"
+  },
+  {
+    "file": "2418.arw",
+    "camera": "Sony ILCE-7M3",
+    "mode": "14 位未压缩",
+    "url": "https://raw.pixls.us/getfile.php/2418/nice/Sony%20-%20ILCE-7M3%20-%2014bit%2014bit%20uncompressed%20%283:2%29.ARW",
+    "sha256": "ece80551abf64949dbe826985a80f1d9b265401ee4ea6b989e1829549616fdcd",
+    "license": "CC0-1.0",
+    "sourceMode": "14bit 14bit uncompressed (3:2) · there does not seem to be uncompressed 12 bit"
+  },
+  {
+    "file": "2783.raf",
+    "camera": "Fujifilm X-T3",
+    "mode": "14 位压缩 · X-Trans",
+    "url": "https://raw.pixls.us/getfile.php/2783/nice/Fujifilm%20-%20X-T3%20-%2014bit%2014bit%20compressed%20%283:2%29.RAF",
+    "sha256": "95b33021160b239ceb1a09d46a1b29cb60cb7dd47581feb126b337c219091754",
+    "license": "CC0-1.0",
+    "sourceMode": "14bit 14bit compressed (3:2)"
+  },
+  {
+    "file": "2784.raf",
+    "camera": "Fujifilm X-T3",
+    "mode": "14 位未压缩 · X-Trans",
+    "url": "https://raw.pixls.us/getfile.php/2784/nice/Fujifilm%20-%20X-T3%20-%2014bit%2014bit%20uncompressed%20%283:2%29.RAF",
+    "sha256": "24abd27b4a200f3170ea1579672944b807d0eb35bf21422a3937bb644f27f2eb",
+    "license": "CC0-1.0",
+    "sourceMode": "14bit 14bit uncompressed (3:2)"
+  },
+  {
+    "file": "4096.rw2",
+    "camera": "Panasonic DC-S5",
+    "mode": "标准尺寸",
+    "url": "https://raw.pixls.us/getfile.php/4096/nice/Panasonic%20-%20DC-S5%20-%203:2.RW2",
+    "sha256": "350f4ad0839383b3e7bcb0feb2dda827fc81e97ab59917df2a1d824bb979234d",
+    "license": "CC0-1.0",
+    "sourceMode": "3:2 · Size \"L\""
+  },
+  {
+    "file": "4098.rw2",
+    "camera": "Panasonic DC-S5",
+    "mode": "9600 万像素高分辨率合成",
+    "url": "https://raw.pixls.us/getfile.php/4098/nice/Panasonic%20-%20DC-S5%20-%203:2.RW2",
+    "sha256": "3d1c714cab86a9e699e37f6f96719a98a5a2930e5ac77c73c1cba9b18f98c828",
+    "license": "CC0-1.0",
+    "sourceMode": "3:2 · High resolution (sensor shift) mode 96 MP"
+  },
+  {
+    "file": "5915.orf",
+    "camera": "Olympus E-M10 Mark II",
+    "mode": "标准 RAW",
+    "url": "https://raw.pixls.us/getfile.php/5915/nice/Olympus%20-%20E-M10%20Mark%20II%20-%2016bit%20%284:3%29.ORF",
+    "sha256": "1a95224502963c892aa69ceb58767e58730f223c4b60b62119261d45eeba8bd9",
+    "license": "CC0-1.0",
+    "sourceMode": "16bit (4:3)"
+  },
+  {
+    "file": "1075.pef",
+    "camera": "Pentax K-3",
+    "mode": "14 位 PEF",
+    "url": "https://raw.pixls.us/getfile.php/1075/nice/Pentax%20-%20K-3%20-%2014bit%20%283:2%29.PEF",
+    "sha256": "abfb3907b53734b5f353e8de0c6173470c7aad07f9cecc10f723d222a49dec9a",
+    "license": "CC0-1.0",
+    "sourceMode": "14bit (3:2)"
+  },
+  {
+    "file": "1603.dng",
+    "camera": "Leica M10",
+    "mode": "未压缩 DNG",
+    "url": "https://raw.pixls.us/getfile.php/1603/nice/Leica%20-%20M10%20-%2016bit%2016bit%20uncompressed%20%283:2%29.dng",
+    "sha256": "26be5e06dfb53a2938dab3ca8f06024533a9c0dd0c652938f39eb48bc325f95e",
+    "license": "CC0-1.0",
+    "sourceMode": "16bit 16bit uncompressed (3:2)"
+  },
+  {
+    "file": "2058.3fr",
+    "camera": "Hasselblad X1D",
+    "mode": "标准 3FR",
+    "url": "https://raw.pixls.us/getfile.php/2058/nice/Hasselblad%20-%20X1D%20-%2016bit%20%284:3%29.3FR",
+    "sha256": "395acb2c706dc10270c58ec261e42a5e36f6ac8c39d2a767e86e83648aa318a3",
+    "license": "CC0-1.0",
+    "sourceMode": "16bit (4:3)"
+  }
+]

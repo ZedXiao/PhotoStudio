@@ -1,0 +1,23 @@
+# SwiftPM caches and generated application bundles
+.build/
+.swiftpm/
+dist/
+
+# Downloaded photos and generated test fixtures
+.fixtures/
+
+# Local settings, credentials and diagnostic output
+.env
+.env.*
+!.env.example
+*.log
+*.crash
+*.ips
+*.dSYM/
+
+# macOS, Xcode and Python local files
+.DS_Store
+*.xcuserstate
+xcuserdata/
+__pycache__/
+*.py[cod]

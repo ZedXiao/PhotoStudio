@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleExecutable</key><string>PhotoStudio</string>
+<key>CFBundleIdentifier</key><string>app.photostudio.mac</string>
+<key>CFBundleName</key><string>PhotoStudio</string>
+<key>CFBundleDisplayName</key><string>PhotoStudio</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>CFBundleShortVersionString</key><string>1.2.6</string>
+<key>CFBundleVersion</key><string>10</string>
+<key>CFBundleIconFile</key><string>AppIcon</string>
+<key>CFBundleDevelopmentRegion</key><string>zh_CN</string>
+<key>CFBundleLocalizations</key><array><string>zh_CN</string><string>en</string></array>
+<key>LSMinimumSystemVersion</key><string>26.0</string>
+<key>NSPrincipalClass</key><string>NSApplication</string>
+<key>NSHighResolutionCapable</key><true/>
+<key>NSSupportsAutomaticTermination</key><false/>
+<key>NSHumanReadableCopyright</key><string>PhotoStudio · 2026</string>
+<key>CFBundleDocumentTypes</key><array><dict>
+<key>CFBundleTypeName</key><string>照片与相机 RAW</string>
+<key>CFBundleTypeRole</key><string>Viewer</string>
+<key>LSHandlerRank</key><string>Alternate</string>
+<key>LSItemContentTypes</key><array><string>public.image</string><string>public.camera-raw-image</string></array>
+<key>CFBundleTypeExtensions</key><array><string>jpg</string><string>jpeg</string><string>heic</string><string>heif</string><string>png</string><string>tif</string><string>tiff</string><string>cr2</string><string>cr3</string><string>crw</string><string>nef</string><string>nrw</string><string>arw</string><string>raf</string><string>rw2</string><string>orf</string><string>pef</string><string>dng</string><string>3fr</string><string>fff</string><string>iiq</string><string>x3f</string><string>srw</string><string>rwl</string><string>raw</string></array>
+</dict></array>
+</dict></plist>
