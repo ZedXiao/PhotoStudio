@@ -28,6 +28,8 @@ export DEVELOPER_DIR="/path/to/Xcode.app/Contents/Developer"
 | --- | --- |
 | `./script/build_and_run.sh` | 编译、组装应用、临时签名并启动 |
 | `./script/build_and_run.sh --build-only` | 编译并生成 `dist/PhotoStudio.app` |
+| `./script/build_and_run.sh --build-only --configuration release` | 生成经过优化的 Release 应用 |
+| `./script/package.sh` | Release 构建，生成拖拽安装 DMG、ZIP 和 SHA-256 校验文件 |
 | `./script/build_and_run.sh --verify` | 构建、启动并检查进程存在 |
 | `./script/build_and_run.sh --debug` | 构建后通过 LLDB 运行 |
 | `./script/build_and_run.sh --logs` | 构建、启动并查看该进程的系统日志 |
@@ -35,7 +37,9 @@ export DEVELOPER_DIR="/path/to/Xcode.app/Contents/Developer"
 | `./script/test.sh` | 运行全部核心 XCTest |
 | `./script/test.sh --filter DecoderTests` | 仅运行解码相关测试 |
 
-构建脚本会先结束现有 PhotoStudio 进程，再重建应用包。它使用当前机器架构构建开发版，不生成通用二进制，也不执行 Developer ID 签名、公证或发布。
+构建脚本会先结束现有 PhotoStudio 进程，再重建应用包，默认使用 Debug；`--configuration release` 切换到优化构建。打包脚本复用同一个构建入口，并校验应用签名和磁盘映像。DMG 内包含应用和指向“应用程序”的快捷入口，ZIP 内直接包含应用，校验文件覆盖两种安装包。脚本使用当前机器架构，不生成通用二进制，也不执行 Developer ID 签名、公证或上传发布。
+
+图标图案源文件为 `Resources/AppIconArtwork.png`。`script/generate_icon.swift` 统一应用圆角、透明留白和阴影，输出 `Resources/AppIcon.png` 及包含 16–1024 像素表示的 `Resources/AppIcon.icns`。修改图案或脚本后，下一次构建会自动重新生成；[图标设计记录](AppIcon-Design.md) 保存最终生成提示词。
 
 ## 工程结构
 

@@ -4,6 +4,14 @@
 
 This log summarizes existing version notes. Linked original records preserve implementation and verification details in Chinese. The README and development guide describe current behavior.
 
+## 1.2.7 (build 11) — 2026-11-03
+
+- Refresh the app icon with a pale background, blue/turquoise aperture, and warm yellow center, with consistent rounded corners and transparent edges at every size.
+- Add reproducible Release packaging for a drag-install DMG, ZIP, and SHA-256 checksums.
+- Use ad hoc signing, without Apple Developer ID signing or Apple notarization; keep the existing minimum OS and Apple Silicon support scope.
+
+[Release notes](releases/v1.2.7.md) · [Implementation and verification record](PhotoStudio-1.2.7.md) · [Icon design record](AppIcon-Design.md)
+
 ## 1.2.6 (build 10) — 2026-11-03
 
 - Give the thumbnail panel's arrow tab a gentle 36 pt flat top, with an overall width of 104 pt and height of 10 pt.

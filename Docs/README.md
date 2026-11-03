@@ -2,14 +2,15 @@
 
 [简体中文首页](../README.md) · [English home](../README.en.md)
 
-当前版本为 **1.2.6（构建 10）**。下表中的中英文指南描述当前实现；历史验收记录保留当时版本的行为和验证范围，部分行为已被后续版本替代。
+当前版本为 **1.2.7（构建 11）**。下表中的中英文指南描述当前实现；历史验收记录保留当时版本的行为和验证范围，部分行为已被后续版本替代。
 
-The current version is **1.2.6 (build 10)**. The guides below describe the current implementation in both languages. Historical records describe their original versions and verification scope; later versions supersede some behavior.
+The current version is **1.2.7 (build 11)**. The guides below describe the current implementation in both languages. Historical records describe their original versions and verification scope; later versions supersede some behavior.
 
 ## 指南 / Guides
 
 | 内容 / Topic | 简体中文 | English |
 | --- | --- | --- |
+| 最新发布与签名说明 / Latest release and signing notice | [v1.2.7 双语发布说明](releases/v1.2.7.md) | [v1.2.7 bilingual release notes](releases/v1.2.7.md) |
 | 功能、安装、使用与快捷键 / Features, setup, usage, shortcuts | [README](../README.md) | [README](../README.en.md) |
 | 构建、架构、调试、测试、贡献 / Build, architecture, debugging, tests, contributions | [开发指南](Development.zh-CN.md) | [Development guide](Development.en.md) |
 | 版本变化 / Version history | [更新日志](CHANGELOG.md) | [Changelog](CHANGELOG.en.md) |
@@ -33,6 +34,7 @@ The original records below are in Chinese; the English changelog summarizes thei
 
 | 版本 / Version | 原始记录 / Original record |
 | --- | --- |
+| 1.2.7 | [明亮图标与安装包 / Bright icon and install packages](PhotoStudio-1.2.7.md) |
 | 1.2.6 | [箭头凸起轮廓 / Arrow tab contour](PhotoStudio-1.2.6.md) |
 | 1.2.5 | [玻璃面板阴影 / Glass panel shadows](PhotoStudio-1.2.5.md) |
 | 1.2.4 | [固定尺寸总览收起 / Fixed-size overview dismissal](PhotoStudio-1.2.4.md) |

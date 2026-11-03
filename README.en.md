@@ -4,7 +4,7 @@
 
 A native macOS camera photo browser with a folder tree, full RAW decoding, and Liquid Glass UI. Built with SwiftUI, AppKit, ImageIO, Core Image, and bundled LibRaw 0.22.3, PhotoStudio browses photos in their original folders without importing them into a library.
 
-Current version: **1.2.6 (build 10)** · Minimum OS: **macOS 26.0** · Validated architecture: **Apple Silicon**. The application currently uses a primarily Chinese interface; this repository provides Chinese and English documentation.
+Current version: **1.2.7 (build 11)** · Minimum OS: **macOS 26.0** · Validated architecture: **Apple Silicon**. The application currently uses a primarily Chinese interface; this repository provides Chinese and English documentation.
 
 ## Features
 
@@ -25,7 +25,13 @@ Current version: **1.2.6 (build 10)** · Minimum OS: **macOS 26.0** · Validated
 | Optional validation | Python 3.9+ for downloading and validating public RAW samples |
 | Validated environment | Apple Silicon running macOS 27.2; macOS 26 hardware and Intel have not been validated |
 
-## Quick start
+## Download and install
+
+Download the DMG or ZIP from [GitHub Release v1.2.7](https://github.com/ZedXiao/PhotoStudio/releases/tag/v1.2.7), for **macOS 26.0+ and Apple Silicon (arm64)**. Open the DMG and drag PhotoStudio to Applications, or extract the ZIP and copy the app. Xcode is not required to run it. The release also includes SHA-256 checksums.
+
+**Signing and notarization: this version is ad hoc signed. It is not Apple Developer ID signed and has not been notarized by Apple.**
+
+## Build from source
 
 ```sh
 git clone https://github.com/ZedXiao/PhotoStudio.git
@@ -40,8 +46,11 @@ LibRaw source is included. Normal builds and photo browsing require no third-par
 ```sh
 ./script/build_and_run.sh --build-only  # Build the .app only
 ./script/build_and_run.sh --verify      # Build, launch, and check the process
+./script/package.sh                    # Release build, DMG, ZIP, and SHA-256 checksums
 ./script/test.sh                       # Core tests; no RAW sample downloads required
 ```
+
+Locally built packages are saved in `dist/` and use the same ad hoc signing approach as the release above.
 
 ## Using PhotoStudio
 

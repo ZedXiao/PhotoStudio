@@ -28,6 +28,8 @@ export DEVELOPER_DIR="/path/to/Xcode.app/Contents/Developer"
 | --- | --- |
 | `./script/build_and_run.sh` | Compile, assemble the bundle, ad hoc sign, and launch |
 | `./script/build_and_run.sh --build-only` | Compile and create `dist/PhotoStudio.app` |
+| `./script/build_and_run.sh --build-only --configuration release` | Create an optimized Release application |
+| `./script/package.sh` | Release build, drag-install DMG, ZIP, and SHA-256 checksum file |
 | `./script/build_and_run.sh --verify` | Build, launch, and check that the process exists |
 | `./script/build_and_run.sh --debug` | Build and run under LLDB |
 | `./script/build_and_run.sh --logs` | Build, launch, and stream system logs for the process |
@@ -35,7 +37,9 @@ export DEVELOPER_DIR="/path/to/Xcode.app/Contents/Developer"
 | `./script/test.sh` | Run all core XCTest cases |
 | `./script/test.sh --filter DecoderTests` | Run decoding tests only |
 
-The build script stops existing PhotoStudio processes before recreating the bundle. It builds a development application for the current machine architecture; it does not create a universal binary, perform Developer ID signing or notarization, or publish a release.
+The build script stops existing PhotoStudio processes before recreating the bundle. Debug is the default; `--configuration release` selects an optimized build. Packaging reuses that entry point and verifies the application signature and disk image. The DMG contains the app and an Applications shortcut, the ZIP contains the app directly, and the checksum file covers both packages. Scripts target the current machine architecture and do not create a universal binary, perform Developer ID signing or notarization, or upload a release.
+
+The icon artwork source is `Resources/AppIconArtwork.png`. `script/generate_icon.swift` applies consistent rounded corners, transparent margins, and a shadow, then writes `Resources/AppIcon.png` and `Resources/AppIcon.icns` with 16–1024 pixel representations. Editing the artwork or generator automatically regenerates the icon on the next build. The [icon design record](AppIcon-Design.md) preserves the final generation prompt.
 
 ## Project layout
 

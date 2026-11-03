@@ -4,7 +4,7 @@
 
 原生 macOS 相机照片浏览器，支持文件夹目录树、完整 RAW 解码和 Liquid Glass 界面。基于 SwiftUI、AppKit、ImageIO、Core Image 和内置 LibRaw 0.22.3，直接浏览原位置的照片，无需导入图库。
 
-当前版本：**1.2.6（构建 10）** · 最低系统：**macOS 26.0** · 已验收架构：**Apple Silicon**。应用当前主要使用中文界面；本仓库提供中英文文档。
+当前版本：**1.2.7（构建 11）** · 最低系统：**macOS 26.0** · 已验收架构：**Apple Silicon**。应用当前主要使用中文界面；本仓库提供中英文文档。
 
 ## 功能
 
@@ -25,7 +25,13 @@
 | 可选验证 | Python 3.9+，用于下载和复验公开 RAW 样片 |
 | 已验证环境 | Apple Silicon，macOS 27.2；macOS 26 真机与 Intel 尚未验收 |
 
-## 快速开始
+## 下载与安装
+
+从 [GitHub Release v1.2.7](https://github.com/ZedXiao/PhotoStudio/releases/tag/v1.2.7) 下载 DMG 或 ZIP，适用于 **macOS 26.0+、Apple Silicon（arm64）**。DMG 打开后将 PhotoStudio 拖到“应用程序”；ZIP 解压后复制应用即可，运行时无需 Xcode。发布页同时提供 SHA-256 校验文件。
+
+**签名与公证：此版本采用临时签名（ad hoc），未使用 Apple Developer ID 签名，未做苹果公证（Apple notarization）。**
+
+## 从源码构建
 
 ```sh
 git clone https://github.com/ZedXiao/PhotoStudio.git
@@ -40,8 +46,11 @@ LibRaw 源码已随项目提供，常规构建和照片浏览无需下载第三�
 ```sh
 ./script/build_and_run.sh --build-only  # 只生成 .app
 ./script/build_and_run.sh --verify      # 构建、启动并检查进程
+./script/package.sh                    # Release 构建，生成 DMG、ZIP 和 SHA-256
 ./script/test.sh                       # 核心逻辑测试，无需下载 RAW 样片
 ```
+
+自行打包的安装包保存在 `dist/`，采用与上述 Release 相同的临时签名方式。
 
 ## 使用方式
 

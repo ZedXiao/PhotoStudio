@@ -2,28 +2,33 @@ import AppKit
 import Foundation
 
 let output = URL(fileURLWithPath: CommandLine.arguments[1])
+let artworkURL = output.appendingPathComponent("AppIconArtwork.png")
+guard let artwork = NSImage(contentsOf: artworkURL) else {
+    throw NSError(domain: "PhotoStudio.Icon", code: 1,
+                  userInfo: [NSLocalizedDescriptionKey: "Cannot read icon artwork: \(artworkURL.path)"])
+}
 let iconset = output.appendingPathComponent("AppIcon.iconset")
 try FileManager.default.createDirectory(at: iconset, withIntermediateDirectories: true)
+defer { try? FileManager.default.removeItem(at: iconset) }
 let master = NSImage(size: NSSize(width: 1024, height: 1024))
 master.lockFocus()
-let rect = NSRect(x: 24, y: 24, width: 976, height: 976)
-let rounded = NSBezierPath(roundedRect: rect, xRadius: 214, yRadius: 214)
-NSGradient(starting: NSColor(srgbRed: 0.20, green: 0.26, blue: 0.34, alpha: 1), ending: NSColor(srgbRed: 0.055, green: 0.085, blue: 0.13, alpha: 1))!.draw(in: rounded, angle: -70)
-NSColor.white.withAlphaComponent(0.15).setStroke(); rounded.lineWidth = 3; rounded.stroke()
-let plate = NSBezierPath(roundedRect: NSRect(x: 162, y: 199, width: 700, height: 626), xRadius: 100, yRadius: 100)
-NSColor.white.withAlphaComponent(0.035).setFill(); plate.fill()
-NSColor.white.withAlphaComponent(0.12).setStroke(); plate.lineWidth = 3; plate.stroke()
-let symbol = NSImage(systemSymbolName: "camera.aperture", accessibilityDescription: nil)!
-    .withSymbolConfiguration(NSImage.SymbolConfiguration(pointSize: 540, weight: .ultraLight))!
-let tinted = NSImage(size: NSSize(width: 620, height: 620))
-tinted.lockFocus()
-symbol.draw(in: NSRect(x: 0, y: 0, width: 620, height: 620))
-NSColor(srgbRed: 0.65, green: 0.85, blue: 1, alpha: 1).setFill()
-NSRect(x: 0, y: 0, width: 620, height: 620).fill(using: .sourceAtop)
-tinted.unlockFocus()
-tinted.draw(in: NSRect(x: 202, y: 202, width: 620, height: 620))
-NSColor(srgbRed: 0.38, green: 0.73, blue: 0.97, alpha: 1).setFill()
-NSBezierPath(ovalIn: NSRect(x: 759, y: 740, width: 22, height: 22)).fill()
+let rect = NSRect(x: 64, y: 64, width: 896, height: 896)
+let rounded = NSBezierPath(roundedRect: rect, xRadius: 200, yRadius: 200)
+NSGraphicsContext.saveGraphicsState()
+let shadow = NSShadow()
+shadow.shadowColor = NSColor.black.withAlphaComponent(0.10)
+shadow.shadowBlurRadius = 16
+shadow.shadowOffset = NSSize(width: 0, height: -7)
+shadow.set()
+NSColor.white.setFill(); rounded.fill()
+NSGraphicsContext.restoreGraphicsState()
+NSGraphicsContext.saveGraphicsState()
+rounded.addClip()
+NSGraphicsContext.current?.imageInterpolation = .high
+artwork.draw(in: rect, from: .zero, operation: .sourceOver, fraction: 1)
+NSGraphicsContext.restoreGraphicsState()
+NSColor.white.withAlphaComponent(0.55).setStroke()
+rounded.lineWidth = 2; rounded.stroke()
 master.unlockFocus()
 for size in [16, 32, 128, 256, 512] {
     for scale in [1, 2] {
@@ -31,10 +36,13 @@ for size in [16, 32, 128, 256, 512] {
         let bitmap = NSBitmapImageRep(bitmapDataPlanes: nil, pixelsWide: pixels, pixelsHigh: pixels, bitsPerSample: 8, samplesPerPixel: 4, hasAlpha: true, isPlanar: false, colorSpaceName: .deviceRGB, bytesPerRow: 0, bitsPerPixel: 0)!
         NSGraphicsContext.saveGraphicsState()
         NSGraphicsContext.current = NSGraphicsContext(bitmapImageRep: bitmap)
+        NSGraphicsContext.current?.imageInterpolation = .high
         master.draw(in: NSRect(x: 0, y: 0, width: pixels, height: pixels))
         NSGraphicsContext.restoreGraphicsState()
         let name = "icon_\(size)x\(size)\(scale == 2 ? "@2x" : "").png"
-        try bitmap.representation(using: .png, properties: [:])!.write(to: iconset.appendingPathComponent(name))
+        let png = bitmap.representation(using: .png, properties: [:])!
+        try png.write(to: iconset.appendingPathComponent(name))
+        if pixels == 1024 { try png.write(to: output.appendingPathComponent("AppIcon.png")) }
     }
 }
 func uint32Data(_ value: Int) -> Data {
@@ -54,4 +62,3 @@ for (type, filename) in [("icp4", "icon_16x16.png"), ("icp5", "icon_32x32.png"),
 }
 var icns = Data("icns".utf8); icns.append(uint32Data(chunks.count + 8)); icns.append(chunks)
 try icns.write(to: output.appendingPathComponent("AppIcon.icns"))
-try FileManager.default.removeItem(at: iconset)
